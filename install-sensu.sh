@@ -13,9 +13,17 @@ ln -sf /opt/sensu/embedded/bin/ruby /usr/bin/ruby
 /opt/sensu/embedded/bin/gem install redphone --no-rdoc --no-ri
 /opt/sensu/embedded/bin/gem install mail --no-rdoc --no-ri --version 2.5.4
 /opt/sensu/embedded/bin/gem install bunny --no-rdoc --no-ri
+/opt/sensu/embedded/bin/gem install sensu-plugins --no-rdoc --no-ri
+/opt/sensu/embedded/bin/gem install sensu-plugins-cpu-checks --no-rdoc --no-ri
+/opt/sensu/embedded/bin/gem install sensu-plugins-load-checks --no-rdoc --no-ri
+/opt/sensu/embedded/bin/gem install sensu-plugins-php-fpm --no-rdoc --no-ri
+/opt/sensu/embedded/bin/gem install sensu-plugins-mailer --no-rdoc --no-ri
+/opt/sensu/embedded/bin/gem install sensu-plugins-influxdb --no-rdoc --no-ri
+/opt/sensu/embedded/bin/gem install sensu-plugins-telegram --no-rdoc --no-ri
+/opt/sensu/embedded/bin/gem install sensu-plugins-load-checks --no-rdoc --no-ri
+/opt/sensu/embedded/bin/gem install sensu-plugins-memory-checks --no-rdoc --no-ri
+/opt/sensu/embedded/bin/gem install sensu-plugins-nginx --no-rdoc --no-ri
+/opt/sensu/embedded/bin/gem install sensu-plugins-mysql --no-rdoc --no-ri
+/opt/sensu/embedded/bin/gem install sensu-plugins-disk-checks --no-rdoc --no-ri
 
-rm -rf /etc/sensu/plugins
-git clone https://github.com/sensu/sensu-community-plugins.git /tmp/sensu_plugins
-
-cp -Rpf /tmp/sensu_plugins/plugins /etc/sensu/
 find /etc/sensu/plugins/ -name *.rb -exec chmod +x {} \;
