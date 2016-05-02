@@ -42,7 +42,7 @@ cat << EOF > /etc/sensu/conf.d/rabbitmq.json
     "port": 5671,
     "vhost": "/sensu",
     "user": "sensu",
-    "password": "pass"
+    "password": "sensu"
   }
 }
 EOF
