@@ -13,7 +13,7 @@ ln -sf /opt/sensu/embedded/bin/ruby /usr/bin/ruby
 /opt/sensu/embedded/bin/gem install redphone --no-rdoc --no-ri
 /opt/sensu/embedded/bin/gem install mail --no-rdoc --no-ri --version 2.5.4
 /opt/sensu/embedded/bin/gem install bunny --no-rdoc --no-ri
-/opt/sensu/embedded/bin/gem install sensu-plugins --no-rdoc --no-ri
+/opt/sensu/embedded/bin/gem install sensu-plugin --no-rdoc --no-ri
 /opt/sensu/embedded/bin/gem install sensu-plugins-cpu-checks --no-rdoc --no-ri
 /opt/sensu/embedded/bin/gem install sensu-plugins-load-checks --no-rdoc --no-ri
 /opt/sensu/embedded/bin/gem install sensu-plugins-php-fpm --no-rdoc --no-ri
