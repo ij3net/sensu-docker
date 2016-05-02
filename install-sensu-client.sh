@@ -2,7 +2,7 @@
 wget -q http://repos.sensuapp.org/apt/pubkey.gpg -O- | apt-key add -
 echo "deb http://repos.sensuapp.org/apt sensu main" > /etc/apt/sources.list.d/sensu.list
 
-apt-get update && apt-get install -y git-core sensu
+apt-get update && apt-get install -y git-core sensu build-essential
 echo "sensu hold" | dpkg --set-selections
 
 cat << EOF > /etc/default/sensu
